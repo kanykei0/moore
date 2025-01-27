@@ -47,6 +47,7 @@
   border-radius: 100px;
   padding: 5px 6px 5px 16px;
   cursor: pointer;
+  color: var(--color-black);
 
   @include medium {
     width: 100%;
