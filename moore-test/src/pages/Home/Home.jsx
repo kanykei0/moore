@@ -9,8 +9,8 @@ export const Home = () => {
   return (
     <div>
       <HeroBlock />
-      {/* <AboutUsBlock />
-      <ProductsList />
+      <AboutUsBlock />
+      {/* <ProductsList />
       <Recomendation /> */}
     </div>
   );

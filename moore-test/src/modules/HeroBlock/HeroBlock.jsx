@@ -11,6 +11,7 @@ export const HeroBlock = () => {
             color="white"
             variant="h1"
             font="mons"
+            weight="bold"
             className={classes.title}
           >
             Ваш путеводитель в области сырья
@@ -20,7 +21,7 @@ export const HeroBlock = () => {
               <input type="text" placeholder="Найти..." />
             </form>
             <div className={classes.call}>
-              <Typography>Заказать звонок</Typography>
+              <Typography font="mons">Заказать звонок</Typography>
               <div className={classes.arrow}>
                 <div className={classes.icon}>
                   <ArrowIcon />

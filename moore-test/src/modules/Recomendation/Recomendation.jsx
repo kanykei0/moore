@@ -43,7 +43,8 @@ export const Recomendation = () => {
           </Typography>
           <div className={classes.wrapper}>
             <Typography font="mons" variant="h3" weight="bold">
-              Рекомендуемые товары
+              Рекомендуемые <br />
+              товары
             </Typography>
             <button className={classes.btn}>
               <Typography>Все товары</Typography>

@@ -6,3 +6,4 @@ export { MinusIcon } from "./MinusIcon";
 export { PlusIcon } from "./PlusIcon";
 export { BurgerIcon } from "./BurgerIcon";
 export { PaginationArrow } from "./PaginationArrow";
+export { CloseIcon } from "./CloseIcon";

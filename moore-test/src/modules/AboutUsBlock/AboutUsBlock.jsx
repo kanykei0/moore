@@ -12,7 +12,7 @@ export const AboutUsBlock = () => {
         </Typography>
         <div className={classes.inner}>
           <div className={classes.right}>
-            <Typography className={classes.text}>
+            <Typography className={classes.text} font="open">
               Мы предлагаем вам не просто сырье, а экспертность и индивидуальный
               подход: всегда готовы помочь найти альтернативу, закрыть срочную
               потребность или предложить уникальное решение.
