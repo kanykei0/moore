@@ -28,6 +28,7 @@
         line-height: 40px;
       }
       @include medium {
+        max-width: 300px;
         line-height: 32px;
         text-align: center;
       }
