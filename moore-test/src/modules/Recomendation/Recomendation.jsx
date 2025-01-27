@@ -5,6 +5,8 @@ import rec2 from "assets/images/rec2.png";
 import rec3 from "assets/images/rec3.png";
 import rec4 from "assets/images/rec4.png";
 import { Container, RecomendationCard, Typography } from "ui/index";
+import { Pagination } from "..";
+import { useMediaQuery } from "utils/Hooks/useMedia";
 
 const RecomedationData = [
   {
@@ -34,6 +36,8 @@ const RecomedationData = [
 ];
 
 export const Recomendation = () => {
+  const isMobile = useMediaQuery("(max-width: 850px)");
+
   return (
     <div className={classes.bg}>
       <Container>
@@ -46,14 +50,16 @@ export const Recomendation = () => {
               Рекомендуемые <br />
               товары
             </Typography>
-            <button className={classes.btn}>
-              <Typography>Все товары</Typography>
-              <div className={classes.arrow}>
-                <div className={classes.icon}>
-                  <ArrowIcon />
+            {!isMobile && (
+              <button className={classes.btn}>
+                <Typography>Все товары</Typography>
+                <div className={classes.arrow}>
+                  <div className={classes.icon}>
+                    <ArrowIcon />
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            )}
           </div>
           <div className={classes.list}>
             {RecomedationData.map((item, key) => (
@@ -67,6 +73,18 @@ export const Recomendation = () => {
             ))}
           </div>
         </div>
+        {isMobile ? (
+          <button className={classes.btn}>
+            <Typography>Все товары</Typography>
+            <div className={classes.arrow}>
+              <div className={classes.icon}>
+                <ArrowIcon />
+              </div>
+            </div>
+          </button>
+        ) : (
+          <Pagination />
+        )}
       </Container>
     </div>
   );

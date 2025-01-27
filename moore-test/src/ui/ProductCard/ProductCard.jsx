@@ -11,7 +11,9 @@ export const ProductCard = ({ image, title }) => {
           {title}
         </Typography>
         <button className={classes.btn}>
-          <Typography font="open">Подробнее</Typography>
+          <Typography font="open" variant="smallBody">
+            Подробнее
+          </Typography>
           <div className={classes.arrow}>
             <div className={classes.icon}>
               <ArrowIcon />

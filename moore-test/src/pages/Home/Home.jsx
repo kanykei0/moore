@@ -10,8 +10,8 @@ export const Home = () => {
     <div>
       <HeroBlock />
       <AboutUsBlock />
-      {/* <ProductsList />
-      <Recomendation /> */}
+      <ProductsList />
+      <Recomendation />
     </div>
   );
 };

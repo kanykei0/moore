@@ -3,26 +3,11 @@ import classes from "./Header.module.scss";
 import { navigation } from "utils/Constants/Constants";
 import { NavLink } from "react-router-dom";
 import { Container, Typography } from "ui/index";
-import { useEffect, useState } from "react";
 import Burger from "./components/BurgerMenu/BurgerMenu";
+import { useMediaQuery } from "utils/Hooks/useMedia";
 
 export const Header = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia(`(max-width: 850px)`);
-
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    handleMediaQueryChange(mediaQuery);
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+  const isMobile = useMediaQuery("(max-width: 850px)");
 
   return (
     <div className={classes.header}>

@@ -1,9 +1,22 @@
+@use "styles/mixin" as *;
+
 .block {
   position: relative;
   width: 290px;
   height: 396px;
   border-radius: 16px;
   padding: 0 20px;
+
+  @include medium {
+    margin-bottom: 15px;
+  }
+
+  @include small {
+    width: 100%;
+    height: 195px;
+    margin-bottom: 15px;
+    padding: 12px;
+  }
 
   img {
     position: absolute;
@@ -49,6 +62,10 @@
       width: 100%;
       margin-top: 20px;
 
+      @include small {
+        margin: 12px 0 0;
+      }
+
       .arrow {
         background-color: var(--color-primary);
         width: 40px;
@@ -57,6 +74,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include small {
+          width: 24px;
+          height: 24px;
+        }
 
         .icon {
           width: 12px;

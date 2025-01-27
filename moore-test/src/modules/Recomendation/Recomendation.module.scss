@@ -1,6 +1,12 @@
+@use "styles/mixin" as *;
+
 .bg {
   background-color: var(--color-bg);
   padding: 80px 0;
+
+  @include medium {
+    padding: 50px 0;
+  }
 
   .block {
     .wrapper {
@@ -9,36 +15,56 @@
       justify-content: space-between;
       margin-bottom: 40px;
       margin-top: 20px;
-
-      .btn {
-        margin: 0 30px 30px 0;
-        background-color: var(--color-white);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        border: none;
-        border-radius: 100px;
-        padding: 5px 6px 5px 16px;
-        cursor: pointer;
-
-        .arrow {
-          background-color: var(--color-primary);
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          .icon {
-            width: 12px;
-          }
-        }
-      }
     }
     .list {
       display: flex;
       justify-content: space-between;
+
+      @include large {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      @include medium {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.btn {
+  margin: 0 30px 30px 0;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 100px;
+  padding: 5px 6px 5px 16px;
+  cursor: pointer;
+
+  @include medium {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 56px;
+  }
+
+  .arrow {
+    background-color: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      width: 12px;
     }
   }
 }

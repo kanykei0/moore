@@ -22,7 +22,6 @@
       background-color: var(--color-primary);
       color: var(--color-white);
       max-width: 525px;
-      // width: 100%;
       height: 503px;
       border-radius: 15px;
       display: flex;
@@ -34,7 +33,8 @@
         max-width: none;
         width: 100%;
         height: auto;
-        min-height: 275px;
+        max-height: 275px;
+        align-items: start;
       }
 
       .text::before {

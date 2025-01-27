@@ -1,3 +1,5 @@
+@use "styles/mixin" as *;
+
 .block {
   max-width: 290px;
   padding: 16px;
@@ -7,19 +9,40 @@
   background-color: var(--color-white);
   border-radius: 24px;
 
+  @include medium {
+    padding: 8px;
+    border-radius: 16px;
+    max-width: 195px;
+  }
+
   .image {
     max-width: 260px;
     height: 204px;
+
+    @include medium {
+      max-width: 179px;
+      height: 160px;
+    }
 
     img {
       border-radius: 12px;
       object-fit: cover;
     }
   }
+
   .info {
+    .title {
+      @include medium {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
     .weight {
       margin: 4px 0 8px;
     }
+
     .priceBlock {
       display: flex;
       justify-content: space-between;
@@ -40,6 +63,10 @@
         padding: 4px;
         border-radius: 100px;
 
+        @include medium {
+          width: 67px;
+        }
+
         .icon {
           display: flex;
           align-items: center;
@@ -49,9 +76,23 @@
           background-color: var(--color-lightgray);
           border-radius: 50%;
           cursor: pointer;
+
+          svg {
+            width: 12px;
+
+            @include medium {
+              width: 8px;
+            }
+          }
+
+          @include medium {
+            width: 15px;
+            height: 15px;
+          }
         }
       }
     }
+
     .btn {
       background-color: var(--color-white);
       display: flex;
@@ -64,6 +105,10 @@
       width: 100%;
       margin-top: 20px;
 
+      @include medium {
+        padding: 5px 5px 5px 16px;
+      }
+
       .arrow {
         background-color: var(--color-primary);
         width: 40px;
@@ -72,6 +117,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include medium {
+          width: 24px;
+          height: 24px;
+        }
 
         .icon {
           width: 12px;

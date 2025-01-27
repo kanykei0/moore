@@ -21,7 +21,12 @@ export const RecomendationCard = ({ image, title, weight, price }) => {
         <img src={image} alt={title} />
       </div>
       <div className={classes.info}>
-        <Typography weight="semiBold" font="nunito">
+        <Typography
+          weight="semiBold"
+          font="nunito"
+          variant="rec"
+          className={classes.title}
+        >
           {title}
         </Typography>
         <Typography
@@ -47,7 +52,9 @@ export const RecomendationCard = ({ image, title, weight, price }) => {
           </div>
         </div>
         <button className={classes.btn}>
-          <Typography font="mons">В корзину</Typography>
+          <Typography font="mons" variant="smallBody">
+            В корзину
+          </Typography>
           <div className={classes.arrow}>
             <div className={classes.icon}>
               <ArrowIcon />
