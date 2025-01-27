@@ -1,0 +1,15 @@
+.block {
+  background-color: var(--color-light);
+  margin-top: 100px;
+  padding: 72px 0 152px;
+
+  .title {
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

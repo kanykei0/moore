@@ -1,0 +1,8 @@
+export { CartIcon } from "./CartIcon";
+export { PersonIcon } from "./PersonIcon";
+export { LogoIcon } from "./LogoIcon";
+export { ArrowIcon } from "./ArrowIcon";
+export { MinusIcon } from "./MinusIcon";
+export { PlusIcon } from "./PlusIcon";
+export { BurgerIcon } from "./BurgerIcon";
+export { PaginationArrow } from "./PaginationArrow";

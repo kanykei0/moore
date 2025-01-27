@@ -1,0 +1,37 @@
+.bg {
+  background-color: var(--color-bg);
+
+  .block {
+    .wrapper {
+      .btn {
+        margin: 0 30px 30px 0;
+        background-color: var(--color-white);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        border-radius: 100px;
+        padding: 5px 6px 5px 16px;
+        cursor: pointer;
+
+        .arrow {
+          background-color: var(--color-primary);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .icon {
+            width: 12px;
+          }
+        }
+      }
+    }
+    .list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

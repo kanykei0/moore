@@ -1,0 +1,149 @@
+@use "styles/mixin" as *;
+
+.typography {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.h1 {
+  font-size: 52px;
+
+  @include large {
+    font-size: 35px;
+  }
+  @include medium {
+    font-size: 24px;
+  }
+}
+
+.h2 {
+  font-size: 48px;
+  @include large {
+    font-size: 35px;
+  }
+  @include medium {
+    font-size: 28px;
+  }
+}
+
+.h3 {
+  font-size: 56px;
+  @include large {
+    font-size: 45px;
+  }
+  @include medium {
+    font-size: 28px;
+  }
+}
+
+.h4 {
+  font-size: 24px;
+  @include large {
+    font-size: 20px;
+  }
+  @include medium {
+    font-size: 18px;
+  }
+}
+
+.h5 {
+  font-size: 20px;
+  @include large {
+    font-size: 19px;
+  }
+  @include medium {
+    font-size: 18px;
+  }
+}
+
+.body,
+.span {
+  font-size: 15px;
+  @include large {
+    font-size: 15px;
+  }
+  @include medium {
+    font-size: 14px;
+  }
+}
+
+.smallBody {
+  font-size: 14px;
+  @include large {
+    font-size: 13px;
+  }
+  @include medium {
+    font-size: 13px;
+  }
+}
+
+.extraSmallBody {
+  font-size: 13px;
+
+  @include large {
+    font-size: 12px;
+  }
+  @include medium {
+    font-size: 12px;
+  }
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.dark {
+  color: var(--color-darkT);
+}
+
+.brown {
+  color: var(--color-brown);
+}
+
+.brownLight {
+  color: var(--color-brownL);
+}
+
+.gray {
+  color: var(--color-gray);
+}
+
+.big {
+  font-size: 56px;
+  @include large {
+    font-size: 40px;
+  }
+  @include medium {
+    font-size: 28px;
+  }
+}
+
+.mons {
+  font-family: Montserrat Alternates;
+}
+
+.nunito {
+  font-family: Nunito Sans;
+}
+
+.open {
+  font-family: Open Sans;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.semiBold {
+  font-weight: 600;
+}
